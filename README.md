@@ -264,7 +264,7 @@ The cross-tier experiment trains a neural network on one tier and evaluates it o
 
 Patterns:
 
-* Each model performs **best on the tier it was trained on**, especially when comparing big vs medium.
+* For a given test tier, all three NNs perform very similarly; the big-tier model is marginally best across all test tiers, but differences are < 1 RMSE, so the test-tier characteristics matter more than the training tier
 * Generalization between big and medium tiers is possible but slightly worse than in-domain performance.
 * All three NNs achieve their lowest RMSE when tested on the **small tier**, but this tier also has different price scales and lower absolute prices, so R² remains low.
 
